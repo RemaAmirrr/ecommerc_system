@@ -1,0 +1,105 @@
+{/* <>
+  <div classname="container-fluid" id="main">
+    <div classname="row row-offcanvas row-offcanvas-left h-100">
+      <Sidebar/>
+      <div classname="col-md-9 col-lg-10 main mt-4">
+        <div classname="row mb-3">
+          <div classname="col-xl-6 col-lg-6 mb-2">
+            <div classname="card card-inverse card-success">
+              <div classname="card-block bg-success p-3">
+                <div classname="rotate">
+                  <i classname="bi bi-tag fa-5x"></i>
+                </div>
+                  <h6 classname="text-uppercase">Total Coupons</h6>
+                  <h1 classname="display-1">{stats.total_coupons}</h1>
+              </div>
+              <i classname="bi bi-tag fa-5x"></i>
+            </div>
+            <i classname="bi bi-tag fa-5x"></i>
+          </div>
+            <div classname="col-xl-6 col-lg-6 mb-2">
+              <div classname="card card-inverse card-danger">
+                <div classname="card-block bg-danger p-3">
+                  <div classname="rotate">
+                    <i classname="bi bi-check-circle fa-5x"></i>
+                  </div>
+                    <h6 classname="text-uppercase">Active Coupons</h6>
+                    <h1 classname="display-1">{stats.active_coupones}</h1>
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr/>
+            <hr />
+            <div classname="row  container">
+              <div classname="col-lg-12">
+                <h4 classname="mt-3 mb-4">
+                  {" "}
+                  <i classname="bi bi-tag"> Coupons </i>
+                </h4>
+                <i classname="bi bi-tag">
+                  <table classname="table">
+                    <thead classname="table-dark">
+                      <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {coupons?.map((c, index) => (
+                         <tr key={index}>
+                         <td>{c.conde}</td>
+                         <td>Percentage</td>
+                         <td>{c.discount}%</td>
+                         <td>13</td>
+                         <td>
+                            {c.active === true
+                              ? 'Active'
+                              : 'In-active'
+                            }
+                         </td>
+                         <td>
+                           <i classname="fas fa-eye">
+                             <Link to={`vendor/coupon/${c.id}/`} classname="btn btn-primary mb-1 ms-2">
+                                 <i classname="fas fa-edit"></i>
+                             </Link>
+                             <i classname="fas fa-edit">
+                               <a href="#" onClick={() => handleDeleteCoupon(c.id)} classname="btn btn-danger mb-1 ms-2">
+                                 <i classname="fas fa-trash"></i>
+                               </a>
+                               <i classname="fas fa-trash"></i>
+                             </i>
+                           </i>
+                         </td>
+                       </tr>
+                      ))} 
+                      {coupons.length > 1 &&
+                         <h5 className='mt-4 p-3'>No coupones yet</h5> 
+                      } 
+                    </tbody>
+                  </table>
+                </i>
+              </div>
+            </div>       
+      </div>
+      <i classname="bi bi-tag fa-5x">
+        <i classname="bi bi-check-circle fa-5x">
+          <i classname="bi bi-tag"></i>
+        </i>
+      </i>
+    </div>
+    <i classname="bi bi-tag fa-5x">
+      <i classname="bi bi-check-circle fa-5x">
+        <i classname="bi bi-tag"></i>
+      </i>
+    </i>
+  </div>
+  <i classname="bi bi-tag fa-5x">
+    <i classname="bi bi-check-circle fa-5x">
+      <i classname="bi bi-tag"></i>
+    </i>
+  </i>
+</> */}
